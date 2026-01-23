@@ -90,7 +90,7 @@ $MSE = \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2$
 * data 들을 가장 잘 설명하는 함수를 찾는 것
 > univariate LR  
 > Multivariate LR  
-![linear regression](res/1.png)  
+![linear regression](res/3/1.png)  
 
 * underfitting  
 * overfitting
@@ -99,7 +99,7 @@ $MSE = \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2$
 * 로지스틱 회귀 : 선형결합을 확률로 변환해서 이진분류를 수행하는 선형 분류 모델
 * classification 모델 (0 or 1)
 * 핵심 함수: 시그모이드
-![](../res/sigmoid.png)
+![](res/3/sigmoid.png)
 
 | 항목   | 선형회귀 | 로지스틱 회귀       |
 | ---- | ---- | ------------- |
@@ -111,7 +111,7 @@ $MSE = \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2$
 
 > 강아지 고양이 분류 예시
 
-![](res/sigmoid2.png)
+![](res/3/sigmoid2.png)
 
 1. 이미지 input
 2. SVD 통해서 선형 차원 축소 &rarr; (wᵀx)
@@ -122,7 +122,7 @@ $MSE = \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2$
 ---
 
 ## SVM : Support Vector Machine
-![](res/svm.png)
+![](res/3/svm.png)
 
 * 클래스 간 경계를 나누는 모델
     * 클래스는 feature 공유 집단
@@ -135,7 +135,7 @@ $MSE = \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2$
 
 5. 이때 가장 가까운 점들이 바로 `support vectors`
 
-![](res/svm2.png)
+![](res/3/svm2.png)
 
 Loss f : hinge function  
 (의미: support vectors 와 선의 거리를 최대화)  
@@ -164,7 +164,7 @@ Loss f : hinge function
 ## Regularization(규제)
 ### Ridge, Lasso, Elastic Net
 > Loss Function에 “벌점(penalty)”을 추가하는 것
-![](res/regularization.png)
+![](res/3/regularization.png)
 
 ### Lasso (L1 규제)
 * Cost Function에 가중치의 절대값의 합을 추가
@@ -184,7 +184,7 @@ Loss f : hinge function
 작은 가중치 → 거의 벌점 없음
 #### $w = 0$ 을 만들지 않음
 * Cost Function를 미분해서 해를 구할때 $w=0$ 이면 
-![](res/l2.png) 이므로 $w=0$ 이라면 의미 없는 식이 됨
+![](res/3/l2.png) 이므로 $w=0$ 이라면 의미 없는 식이 됨
 * "각 변수를 조금씩만 사용해라" 라는 결론이 나게 됨
 
 ### Elastic Net
@@ -198,7 +198,7 @@ Loss f : hinge function
 * 하지만 변수를 안 버림
 * 해석력 떨어짐
 #### Elastic Net 필요성
-![](res/elastic.png)
+![](res/3/elastic.png)
 > 변수는 가능하면 적게 써라 (L1)
 > 극단적으로 한 개에 몰지 말고
 > 여러 개에 나눠 써라 (L2) 라는 의미

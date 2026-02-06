@@ -104,4 +104,4 @@ CatBoost가 boosting 모델인 이유는
 2. 맞음
 3. bootstrap + feature randomness 는 random forest 의 특성
     * 틀린 방향을 따라서 모델을 더해서 보정시키는게 GBM 목적
-4. 트리를 학습할때 불순도 최소화 는 decision tree의 특징이고, GBM 계열은 loss함수를 최소화하는게 목적 (gradient의 개념)
+4. 트리를 학습할때 불순도 최소화 는 decision tree의 특징이고, GBM 계열은 트리를 사용한 앙상블 모델인데, loss함수를 최소화하는게 목적 (gradient의 개념)
